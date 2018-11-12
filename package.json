@@ -1,0 +1,27 @@
+{
+  "name": "4inarow",
+  "version": "1.0.0",
+  "description": "A Simple Four In A Row Application",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mart547n/4InARow.git"
+  },
+  "keywords": [
+    "Electron",
+    "Node",
+    "js"
+  ],
+  "author": "Martin Sig Nørbjerg",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Mart547n/4InARow/issues"
+  },
+  "homepage": "https://github.com/Mart547n/4InARow#readme",
+  "devDependencies": {
+    "electron": "^3.0.8"
+  }
+}
