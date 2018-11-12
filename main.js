@@ -7,14 +7,15 @@ let win
 
 function createWindow() {
     win = new BrowserWindow({
-        width: 520,
+        width: 600,
         height: 600,
-        frame: false,
         fullscreenable: false,
         resizable: false,
+        autoHideMenuBar: true,
+        title: "Four In A Rowx",
     })
     //win.setIcon(`${__dirname}/assets/images/icon.svg`);
-    win.loadFile(`${__dirname}/src/html/index.html`);
+    win.loadFile(`${__dirname}/lib/src/html/index.html`);
 
     win.webContents.openDevTools();
 

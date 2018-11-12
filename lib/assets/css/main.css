@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+body {
+    /* The styleing that goes for every html page goes in here  */
+    color: #b4b4b4;
+    font-family: 'Montserrat', 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+}
+
+.tile {
+    /* Dimentions */
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+.board {
+    position: fixed;
+    /* Contains the board as a grid */ 
+    display: grid;
+    background-color: #b4b4b4;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 4px;
+    /* Dimentions */
+    width: auto;
+    height: auto;
+    /* Centers the board */
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+hr {
+    position: relative;
+    margin-top: 440px;
+    align-self: center;
+    width: 85%;
+    height: 2px;
+    border: 0px;
+    background-color: #b4b4b4;
+}
+
+.score {
+    margin-top: 440px;
+    left: 50%;
+    transform: translate(0%, 0%);
+    text-align: center;
+}

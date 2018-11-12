@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Four In A Row</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
 <body>
-    
+    <nav>
+        <!-- Contains a basic navbar for showing oponents and a basic login page -->
+    </nav>
+    <div class="board" id = "Grid">
+        <!-- Contains the board of the game -->
+        <script>
+            // Makes the Grid in the board div
+            const wrapper = document.getElementById("Grid");
+            for (let i = 0; i < (11 * 9); i++) {
+                (function createTile() {
+                    let tile = document.createElement("button");
+                    tile.id = `tile${i}`;
+                    tile.className = "tile";
+                    // Styles the tile
+                    tile.style.backgroundImage = "url('../../assets/img/Blank.svg)";
+                    tile.style.border = "0px";
+                    // Appends the tile to the wraper
+                    wrapper.appendChild(tile);
+                    console.log(tile.id)
+                } () )
+            }
+        </script>
+    </div>
+    <div class="score">
+        <!-- Contains the score of the game -->
+        <hr>
+        <h1>Score</h1>
+        <h2><b>0 - 1</b></h2>
+    </div>
 </body>
 </html>
