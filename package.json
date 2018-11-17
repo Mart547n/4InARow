@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/Mart547n/4InARow#readme",
   "devDependencies": {
-    "electron": "^3.0.8"
+    "electron": "^3.0.9"
   }
 }
