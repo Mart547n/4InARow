@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,30 @@
     <title>Four In A Row</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
+
 <body>
     <nav>
         <!-- Contains a basic navbar for showing oponents and a basic login page -->
     </nav>
-    <div class="board" id = "Grid">
+    <div class="board" id="Grid">
         <!-- Contains the board of the game -->
         <script>
             // Makes the Grid in the board div
             const wrapper = document.getElementById("Grid");
-            for (let i = 0; i < (11 * 9); i++) {
-                (function createTile() {
-                    let tile = document.createElement("button");
-                    tile.id = `tile${i}`;
+            for (let i = 0; i < 9; i++) { // Creates the coloums of the grid
+                for (let j = 0; j < 11; j++) { // Creates the rows of the grid
+                    (function CreateTile () {
+                    let tile = document.createElement("button")
+                    tile.id = `tile[${i}][${j}]`;
                     tile.className = "tile";
-                    // Styles the tile
-                    tile.style.backgroundImage = "url('../../assets/img/Blank.svg)";
+                    // Tile styling
+                    tile.style.backgroundImage = "url('../../assets/img/Blank.svg')";
                     tile.style.border = "0px";
                     // Appends the tile to the wraper
                     wrapper.appendChild(tile);
                     console.log(tile.id)
-                } () )
+                    } ())
+                }
             }
         </script>
     </div>
@@ -39,4 +43,5 @@
     </div>
     <script src="../js/index.js"></script>
 </body>
+
 </html>

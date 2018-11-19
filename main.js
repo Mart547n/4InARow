@@ -9,8 +9,8 @@ function createWindow() {
     win = new BrowserWindow({
         width: 600,
         height: 600,
-        fullscreenable: false,
-        resizable: false,
+        //fullscreenable: false,
+        //resizable: false,
         autoHideMenuBar: true,
         title: "Four In A Rowx",
     })
