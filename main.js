@@ -12,7 +12,7 @@ function createWindow() {
         //fullscreenable: false,
         //resizable: false,
         autoHideMenuBar: true,
-        title: "Four In A Rowx",
+        title: "Four In A Row",
     })
     //win.setIcon(`${__dirname}/assets/images/icon.svg`);
     win.loadFile(`${__dirname}/lib/src/html/index.html`);
